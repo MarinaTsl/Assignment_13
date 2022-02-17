@@ -1,3 +1,5 @@
+import requests
+
 latest_randomness = '4787572d39364760def4802effe4e576a131def40fc80b9af36de29bbfcfd105'
 
 #Digits is a list containing the hex's individual digits:
@@ -19,4 +21,5 @@ for i in range(len(pairs)):
 #To remove any duplicate numbers:
 pairs= list(set(pairs))
 
+name=requests.get("https://api.opap.gr/draws/v3.0/1100/last-result-and-active")
 
