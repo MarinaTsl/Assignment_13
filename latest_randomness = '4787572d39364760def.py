@@ -9,5 +9,3 @@ pairs = [digits[i] + digits[i+1] for i in range(0, num_length-1, 2)]
 
 if num_length % 2 == 1:
     pairs.append(digits[num_length-1])
-
-print(pairs)
